@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+
+
+.navbar-inverse {
+    background-color: #000000;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+
+.nav {
+    margin-left: 500px;
+    width: 800px;
+}
+
+
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a:hover {
+    background-color: rgba(0, 0, 0, 0);
+
+    border-bottom: 1px solid #5c9f24;
+}
+
+
+.navbar-nav>li>a {
+    padding-bottom: 5px;
+}
+
+.navbar-nav>li>a::before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #5c9f24;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar-nav>li>a:hover:before{
+    width: 100%;
+}
+
+.nav>li>a{
+    padding: 10px 0;
+}
+
+.btn-success{
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #5c9f24;
+}
+
+
+.item{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.carousel-indicators .active{
+    background-color: #5c9f24;
+}
+
+.carousel-indicators li{
+    border: none;
+    background-color: #e7e7e7;
+}
+
